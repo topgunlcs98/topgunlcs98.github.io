@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Redux,front-end," />
 
 
 
@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog of topgun">
-<meta property="og:url" content="http://yoursite.com/tags/github/index.html">
+<meta name="keywords" content="Redux,front-end">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MVC小结">
+<meta property="og:url" content="http://yoursite.com/2018/07/13/MVC/index.html">
 <meta property="og:site_name" content="Blog of topgun">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://images2015.cnblogs.com/blog/811883/201704/811883-20170423150019101-1710764799.jpg">
+<meta property="og:updated_time" content="2018-07-13T14:31:44.906Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog of topgun">
+<meta name="twitter:title" content="MVC小结">
+<meta name="twitter:image" content="https://images2015.cnblogs.com/blog/811883/201704/811883-20170423150019101-1710764799.jpg">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/github/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/13/MVC/"/>
 
 
 
 
 
-  <title>标签: github | Blog of topgun</title>
+  <title>MVC小结 | Blog of topgun</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/topgunlcs98"><img style="position: absolute;
     top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"
@@ -237,54 +241,171 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>github<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/13/MVC/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="topgun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/blog-logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of topgun">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/06/11/posthello/" itemprop="url">
-              
-                <span itemprop="name">hello</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">MVC小结</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-11T19:07:36+08:00"
-              content="2018-06-11" >
-          06-11
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-13T20:54:14+08:00">
+                2018-07-13
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/React-Redux/" itemprop="url" rel="index">
+                    <span itemprop="name">React-Redux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://images2015.cnblogs.com/blog/811883/201704/811883-20170423150019101-1710764799.jpg" alt="MVC模型示意图"><br><a id="more"></a><br><strong>Modle（模型）</strong>：负责管理数据，大部分业务逻辑也应该放在Modle中；<br><strong>View（视图）</strong>：负责渲染用户界面，应该避免在视图中处理业务逻辑；<br><strong>Controller（控制器）</strong>：接收用户输入，根据用户输入调用相应模型部分逻辑，把产生的数据结果交给视图，让视图渲染出必要的输出；<br><strong>MVC局限性</strong>：Modle和View之间存在蜘蛛网一样的依赖关系，不便于功能扩展。MVC中View和Modle直接对话就是灾难。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Redux/" rel="tag"># Redux</a>
+          
+            <a href="/tags/front-end/" rel="tag"># front-end</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/14/《芳华》摘抄/" rel="next" title="《芳华》摘抄">
+                <i class="fa fa-chevron-left"></i> 《芳华》摘抄
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -292,6 +413,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzI1NC8xMzc4OA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -517,6 +647,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -545,6 +679,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
